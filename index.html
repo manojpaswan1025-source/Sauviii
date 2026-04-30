@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Fashion Web Designer</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  color: #fff;
+}
+
+nav a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.hero {
+  height: 90vh;
+  background: url('https://via.placeholder.com/1600x900') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  border-left: 4px solid #fff;
+  padding-left: 10px;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #222;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h4 {
+  padding: 10px;
+}
+
+.contact a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  margin-top: 40px;
+}
+
+@media(max-width: 600px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Fashion. Style. Digital Experience.</h2>
+</section>
+
+<section id="about" class="section about">
+  <img src="https://via.placeholder.com/200" alt="Profile Photo">
+  <div>
+    <h2>About</h2>
+    <p>Add your resume summary here. Talk about your passion for fashion websites, clothing, shoes, and accessories design.</p>
+  </div>
+</section>
+
+<section id="skills" class="section skills">
+  <h2>Skills</h2>
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>JavaScript</span>
+  <span>UI/UX Design</span>
+  <span>Responsive Design</span>
+</section>
+
+<section id="experience" class="section">
+  <h2>Experience</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Job Title</h3>
+      <p>Company Name</p>
+      <p>Describe your role and achievements.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects (Fashion Store Style)</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x300" alt="">
+      <h4>Clothing Collection</h4>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x300" alt="">
+      <h4>Shoes Line</h4>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/300x300" alt="">
+      <h4>Accessories</h4>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Contact</h2>
+  <p>Email: your@email.com</p>
+  <a href="#">LinkedIn</a>
+  <a href="#">GitHub</a>
+  <a href="#">Instagram</a>
+</section>
+
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+</body>
+</html>
